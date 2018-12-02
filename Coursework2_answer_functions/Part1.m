@@ -74,7 +74,7 @@ for i=1:Data.N+1
 end
 figure(3)
 hold on
-plot(time, c_results(:,1+16), 'ro-')
+plot(time, c_results(:,1+16), 'r-')
 plot(time, c, 'b-')
 title('Numeric Vs Analytical')
 xlabel('t, s')
