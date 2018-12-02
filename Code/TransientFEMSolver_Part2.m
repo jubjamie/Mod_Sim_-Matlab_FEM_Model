@@ -74,8 +74,8 @@ for k  = 2:Data.N+1
     After_E = find(msh.nvec > 0.00166667, 1); % The x node position after E
     Before_E = After_E-1; % The E nodal position before E
     
-    TempBefore_E = c_results(k, Before_E); % The temp at the node beofre E
-    TempAfter_E = c_results(k, After_E); % The temp at the node after E
+    TempBefore_E = c_results(k, (2*Before_E)-1); % The temp at the node beofre E
+    TempAfter_E = c_results(k, (2*After_E)-1); % The temp at the node after E
     
     %Linieary interpolate to fine the value at E
     TempE(k) = interp1([msh.nvec(Before_E) msh.nvec(After_E)], [TempBefore_E TempAfter_E], E);

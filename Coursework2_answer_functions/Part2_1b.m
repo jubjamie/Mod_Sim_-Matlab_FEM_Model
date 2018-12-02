@@ -10,7 +10,7 @@ PathAdd(); % Add the correct folders to the path to allow all code to run
 % GENERATE A STRUCTURE OF THE RELEVENT PROBLEM VARIABLES
 Data.xmin = 0; % Minimum vale of x for the elements
 Data.xmax = 0.01; % Maximum vale of x for the elements
-Data.Ne = 600; % Numeber of elements in the mesh
+Data.Ne = 100; % Numeber of elements in the mesh
 Data.dt = timeStep; % Timestep for transient responce
 Data.VariedParamaters = 1; % Value is either 1 if the equation parameters vary with x or 0 if they dont
 Data.GN = 3; % N value for gausian quadriture
